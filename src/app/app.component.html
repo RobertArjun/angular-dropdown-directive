@@ -1,0 +1,9 @@
+<app-header (feautreEvent)="onRoute($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="routerName === 'recipe'"></app-recipes>
+      <app-shopping-list *ngIf="routerName !== 'recipe'"></app-shopping-list>
+    </div>
+  </div>
+</div>
