@@ -13,11 +13,12 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeService } from './recipes/recipe.service';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, HeaderComponent, RecipesComponent, RecipeListComponent, RecipeDetailsComponent, ShoppingListComponent, ShoppingEditComponent, RecipeItemComponent, DropdownDirective ],
   bootstrap:    [ AppComponent ],
-  providers: [RecipeService]
+  providers: [RecipeService, ShoppingListService]
 })
 export class AppModule { }
